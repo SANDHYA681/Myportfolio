@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandhya Timsina | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="images/profile.jpg" alt="Sandhya Timsina" class="profile-img">
+      <h1>Sandhya Timsina</h1>
+      <p class="subtitle">Web Developer • Ithari 20, Tarahara</p>
+      <nav class="nav-links">
+        <button onclick="toggleSection('about')">About</button>
+        <button onclick="toggleSection('skills')">Skills</button>
+        <button onclick="toggleSection('projects')">Projects</button>
+        <button onclick="toggleSection('contact')">Contact</button>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+      </nav>
+      <div class="social-links">
+        <a href="https://github.com/SANDHYA681" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/sandhya-timsina-689403310/" target="_blank">LinkedIn</a>
+        <a href="SandhyaTimsina_CV.pdf" download>CV</a>
+      </div>
+    </header>
+
+    <section id="about" class="about" style="display:none">
+      <h2>About Me</h2>
+      <p>I'm an aspiring web developer passionate about creating clean, user-focused websites. I enjoy transforming ideas into digital experiences with code and creativity.</p>
+    </section>
+
+    <section id="skills" class="skills" style="display:none">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java</li>
+        <li><strong>Tools:</strong> VS Code, GitHub, XAMPP, Eclipse, Figma</li>
+        <li><strong>Soft Skills:</strong> Communication, Teamwork, Problem-solving</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects" style="display:none">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Clothee – E-Commerce Website</h3>
+        <p>A full-featured Java-based e-commerce site built with MVC architecture and MySQL integration.</p>
+      </div>
+      <div class="project">
+        <h3>JobSpark – Job Portal</h3>
+        <p>An online job search platform featuring filters, alerts, and user roles using PHP and JavaScript.</p>
+      </div>
+      <div class="project">
+        <h3>BRJ Furniture (Python)</h3>
+        <p>Command-line application for tracking inventory and generating invoices using file handling in Python.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" style="display:none">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sandhyatimsina438@gmail.com">sandhyatimsina438@gmail.com</a></p>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Sandhya Timsina</p>
+    </footer>
+  </div>
+</body>
+</html>
