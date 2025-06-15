@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sandhya Timsina | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -14,13 +14,18 @@
       <img src="images/profile.jpg" alt="Sandhya Timsina" class="profile-img">
       <h1>Sandhya Timsina</h1>
       <p class="subtitle">Web Developer • Ithari 20, Tarahara</p>
+
       <nav class="nav-links">
+        <button onclick="toggleSection('experience')">Experience</button>
+        <button onclick="toggleSection('certifications')">Certifications</button>
+        <button onclick="toggleSection('achievements')">Achievements</button>
         <button onclick="toggleSection('about')">About</button>
         <button onclick="toggleSection('skills')">Skills</button>
         <button onclick="toggleSection('projects')">Projects</button>
         <button onclick="toggleSection('contact')">Contact</button>
         <button id="darkModeToggle">Toggle Dark Mode</button>
       </nav>
+
       <div class="social-links">
         <a href="https://github.com/SANDHYA681" target="_blank">GitHub</a>
         <a href="https://www.linkedin.com/in/sandhya-timsina-689403310/" target="_blank">LinkedIn</a>
@@ -28,12 +33,55 @@
       </div>
     </header>
 
-    <section id="about" class="about" style="display:none">
+    <section id="about" style="display:none">
       <h2>About Me</h2>
       <p>I'm an aspiring web developer passionate about creating clean, user-focused websites. I enjoy transforming ideas into digital experiences with code and creativity.</p>
     </section>
 
-    <section id="skills" class="skills" style="display:none">
+    <section id="experience" style="display:none">
+      <h2>Work Experience</h2>
+      <div class="experience">
+        <h3>Python Developer Intern <span>at <em>Nenzy.ai</em></span></h3>
+        <p class="details">Oct 2024 – Mar 2025 | Remote</p>
+        <p>Worked as a Python developer, contributing to development tasks and ML projects, gaining strong experience in real-world applications.</p>
+      </div>
+    </section>
+
+    <section id="certifications" style="display:none">
+      <h2>Certifications</h2>
+
+      <div class="cert">
+        <h3>Python Developer Internship</h3>
+        <p>Successfully completed a six-month internship at Nenzy.ai as a Python Developer, contributing to real-world ML projects.</p>
+      </div>
+
+      <div class="cert">
+        <h3>MERN Stack Certificate</h3>
+        <p>Completed a 90-Day MERN Stack course from Digital Pathshala with project demonstration, review, and certification.</p>
+      </div>
+
+      <div class="cert-images">
+        <div class="cert-block">
+          <h4 class="cert-title">Internship Certificate</h4>
+          <img src="images/Intership Certificate.png" alt="Internship Certificate" class="cert-img" />
+        </div>
+        <div class="cert-block">
+          <h4 class="cert-title">MERN Stack Certificate</h4>
+          <img src="images/DigitalPathshala.png" alt="MERN Stack Certificate" class="cert-img" />
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" style="display:none">
+      <h2>Achievements</h2>
+      <ul>
+        <li>Completed internship at Nenzy.ai as Python Developer</li>
+        <li>Certified in MERN Stack Development from Digital Pathshala</li>
+        <li>Successfully completed 5+ academic and practical development projects</li>
+      </ul>
+    </section>
+
+    <section id="skills" style="display:none">
       <h2>Skills</h2>
       <ul>
         <li><strong>Languages:</strong> HTML, CSS, JavaScript, Python, Java</li>
@@ -42,23 +90,31 @@
       </ul>
     </section>
 
-    <section id="projects" class="projects" style="display:none">
+    <section id="projects" style="display:none">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Clothee – E-Commerce Website</h3>
-        <p>A full-featured Java-based e-commerce site built with MVC architecture and MySQL integration.</p>
+        <h3>Clothee – E-Commerce Platform (Java, MySQL, JSP, CSS, HTML)</h3>
+        <p>Developed a full-stack e-commerce website.</p>
       </div>
       <div class="project">
-        <h3>JobSpark – Job Portal</h3>
-        <p>An online job search platform featuring filters, alerts, and user roles using PHP and JavaScript.</p>
+        <h3>Job Portal (PHP, MySQL, HTML, CSS, JavaScript)</h3>
+        <p>Built a web platform for job seekers in Nepal with search, alerts, and personalized subscriptions.</p>
       </div>
       <div class="project">
-        <h3>BRJ Furniture (Python)</h3>
-        <p>Command-line application for tracking inventory and generating invoices using file handling in Python.</p>
+        <h3>BRJ Furniture</h3>
+        <p>Built a command-line tool for inventory management, real-time stock updates, and automated bill generation.</p>
+      </div>
+      <div class="project">
+        <h3>Smart Plant Watering System (IoT Project)</h3>
+        <p>Developed a system using soil sensors to monitor real-time moisture levels and automatically trigger watering actions.</p>
+      </div>
+      <div class="project">
+        <h3>Store GUI (Java Project)</h3>
+        <p>Built a desktop-based inventory and product management application using Java Swing.</p>
       </div>
     </section>
 
-    <section id="contact" class="contact" style="display:none">
+    <section id="contact" style="display:none">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:sandhyatimsina438@gmail.com">sandhyatimsina438@gmail.com</a></p>
     </section>
